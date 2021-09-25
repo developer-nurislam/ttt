@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.m-content{
+    max-width: 1300px;
+    margin: auto;
+}
+/*start main css*/
+.header_section {
+	background-color: #3df237;
+	border-bottom: 1px solid #ddd;
+}
+.header_logo{
+width: 30%;
+}
+.logo img {
+	max-width: 39%;
+	float: left;
+	margin-right: 18px;
+	/* margin-top: ; */
+}
+span {
+	/* margin-top: 117px; */
+	padding-top: -20px;
+	line-height: 2;
+	text-transform: capitalize;
+	font-size: 35px;
+	font-weight: bolder;
+	color: green;
+}
+.header_menu{
+    width: 50%;
+    text-align: center;
+}
+.header_button {
+	width: 20%;
+	margin-top: 27px;
+}
+.header_button a {
+	font-size: x-large;
+	transition: .6s;
+	border: 2px solid #1f351f;
+	padding: 5px;
+    border-radius: 5px;
+}
+.header_button a:hover{
+    color: red;
+}
+.primary_menu {
+	line-height: 4;
+}
+.primary_menu ul{
+    display: block
+}
+.primary_menu ul li{
+    display: inline-block;
+    padding: 7px;
+}
+.primary_menu ul li a {
+	display: block;
+	color: white;
+	font-weight: bold;
+}
+.primary_menu ul li a:hover{
+    color: red;
+    transition: .7s;
+}
+/*dropdown css*/
+
+
+.primary_menu ul li{
+    position: relative;
+}
+.primary_menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150px;
+    background: rgb(58, 49, 49);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primary_menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* banner css*/
+
+
+.banner_section{
+background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_474606212_2000133320009280160_240366.jpg);
+background-size: cover;
+padding: 220px 0;
+position: relative;
+z-index: 9;
+}
+.banner_section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+   background: rgba(0,0,0,.5);
+   z-index: -1;
+}
+.banner_content{}
+.banner_content h3{
+    color: white;
+}
+.banner_content h2 {
+	font-transform: capilize;
+	font-size: 47px;
+	margin: 33px 0;
+    text-transform: capitalize;
+    color: white;
+}
+.default_btn {
+	padding: 20px 30px;
+	background: white;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 20px;
+	margin: 8px;
+}
+.default_btn:hover{
+    color:rgba( blue, 5, 7, 10);
+}
+
+/*banner bottom*/
+.banner_bottom{
+background: #fff;
+padding: 9% 0;
+}
+.video_left{
+    width: 48%;
+}
+.video-content-right{
+    width: 48%;
+}
+.video-content-right h3{
+    font-size: 40px;
+}
+.video-content-right p{
+    font-size: 20px;
+    color: rgb(102, 98, 98);
+}
+
+/*service-section*/
+
+
+.service_section{
+    background: rgb(53, 46, 46);
+    padding: 100px 0;
+    display: inline-block;
+}
+.section_middle h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    padding: 30px;
+    color: black;
+    }
+.section_middle p{
+    font-size: 25px;
+    color: #ddd;
+}
